@@ -1,4 +1,3 @@
-///<reference path="../jquery/index.d.ts" />
 
 declare module layui {
     type LayerCallbackSuccess = null | ((layero: JQuery, index: number) => void);
@@ -566,6 +565,9 @@ declare module layui {
     export let util: Util;
     export let colorpicker: ColorPicker;
     export let slider: Slider;
+    
+    //  假设全局已经存在此类型的接口
+    export let jquery: JQueryStatic;
 
     export function code(): void;
     export function code(option: CodeOption): void;
